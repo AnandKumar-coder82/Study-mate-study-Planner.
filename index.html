@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyMate - Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h2 class="logo">StudyMate<span>.</span></h2>
+
+        <p class="menu-title">MENU</p>
+        <a href="#dashboard" class="active">Dashboard</a>
+        <a href="#tasks">My Tasks</a>
+        <a href="#goals">Study Goals</a>
+        <a href="#team">Our Team</a>
+
+        <div class="sidebar-bottom">
+            <p>STUDENT WORKSPACE</p>
+            <small>Stay focused. Keep learning.</small>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <p class="date">STUDENT WORKSPACE</p>
+                <h1>Dashboard</h1>
+            </div>
+            <div class="user-profile">
+                <span>AP</span>
+                <div>
+                    <strong>Ananmaya</strong>
+                    <small>CSE Student</small>
+                </div>
+            </div>
+        </header>
+
+        <section class="welcome" id="dashboard">
+            <div>
+                <p>WELCOME TO STUDYMATE</p>
+                <h2>Make today count.</h2>
+                <span>Organize your studies and achieve your daily goals.</span>
+            </div>
+            <div class="book-icon">📚</div>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <p>Total Tasks</p>
+                <h2 id="totalTasks">0</h2>
+                <small>All study activities</small>
+            </div>
+
+            <div class="stat-card">
+                <p>Completed</p>
+                <h2 id="completedTasks">0</h2>
+                <small>Tasks finished</small>
+            </div>
+
+            <div class="stat-card">
+                <p>Pending</p>
+                <h2 id="pendingTasks">0</h2>
+                <small>Tasks remaining</small>
+            </div>
+        </section>
+
+        <section class="task-section" id="tasks">
+            <div class="section-heading">
+                <div>
+                    <h2>My Study Tasks</h2>
+                    <p>Manage your daily learning activities.</p>
+                </div>
+            </div>
+
+            <form id="taskForm">
+                <input type="text" id="taskInput"
+                    placeholder="What do you need to study?" required>
+                <button type="submit">+ Add Task</button>
+            </form>
+
+            <ul id="taskList"></ul>
+        </section>
+
+        <section class="goal-section" id="goals">
+            <h2>Daily Study Goals</h2>
+            <p>Consistency is the key to progress.</p>
+
+            <div class="goal-card">
+                <div>
+                    <strong>Stay consistent</strong>
+                    <span>Complete your planned tasks every day.</span>
+                </div>
+                <span class="goal-icon">🎯</span>
+            </div>
+        </section>
+
+        <section class="team-section" id="team">
+            <h2>Project Team</h2>
+            <p>Designed and developed by</p>
+
+            <div class="team-cards">
+                <div class="team-card">
+                    <div class="avatar">AP</div>
+                    <div>
+                        <h3>Ananmaya Pathak</h3>
+                        <p>HTML & JavaScript</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="avatar">AK</div>
+                    <div>
+                        <h3>Anand Kumar</h3>
+                        <p>CSS & Interface Design</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            StudyMate | B.Tech CSE Project
+            <br>
+            © 2026 Ananmaya Pathak & Anand Kumar
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
